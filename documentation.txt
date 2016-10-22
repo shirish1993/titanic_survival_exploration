@@ -1,0 +1,13 @@
+Three most important features are:
+1. Sex
+2. Age
+3. Pclass
+
+since most of the male less than 10 years of age survived, so no point optimising this part.
+Lets look at the else part [sex is male and age > 10]
+	we will notice that just putting another condition of class == 1 reduce the probability to 75.42%
+	we again notice that class = 1 and age < 40 has more chance of survival, we put age filter as well, this time the accuracy rose to 79.12%
+lets now focus toward female sex
+	we notice that the female in class 3 has lesser chance of surviva, we put in extra condition of class inside female file, which did not affect the accuracy
+	we can also see that the female has lesser chance of probabilty whose age is between 40 & 60, this just increased the accuracy to 80.02%
+
